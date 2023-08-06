@@ -75,15 +75,15 @@ with tab1:
         if submit_button and flag==0:
             
             import pickle
-            with open(r"E:\GUVI\ML_project\Copper\rmodel.pkl", 'rb') as file:
+            with open(r"https://github.com/MOHAMMEDUMARFAAZITH/Industrial-Copper-Model/blob/main/rmodel.pkl", 'rb') as file:
                 loaded_model = pickle.load(file)
-            with open(r"E:\GUVI\ML_project\Copper\rscaler.pkl", 'rb') as f:
+            with open(r"https://github.com/MOHAMMEDUMARFAAZITH/Industrial-Copper-Model/blob/main/rscaler.pkl", 'rb') as f:
                 scaler_loaded = pickle.load(f)
 
-            with open(r"E:\GUVI\ML_project\Copper\rt.pkl", 'rb') as f:
+            with open(r"https://github.com/MOHAMMEDUMARFAAZITH/Industrial-Copper-Model/blob/main/rt.pkl", 'rb') as f:
                 t_loaded = pickle.load(f)
 
-            with open(r"E:\GUVI\ML_project\Copper\rs.pkl", 'rb') as f:
+            with open(r"https://github.com/MOHAMMEDUMARFAAZITH/Industrial-Copper-Model/blob/main/rs.pkl", 'rb') as f:
                 s_loaded = pickle.load(f)
 
             new_sample= np.array([[np.log(float(quantity_tons)),application,np.log(float(thickness)),float(width),country,float(customer),int(product_ref),item_type,status]])
@@ -130,13 +130,13 @@ with tab2:
              
         if csubmit_button and cflag==0:
             import pickle
-            with open(r"E:\GUVI\ML_project\Copper\cmodel.pkl", 'rb') as file:
+            with open(r"https://github.com/MOHAMMEDUMARFAAZITH/Industrial-Copper-Model/blob/main/cmodel.pkl", 'rb') as file:
                 cloaded_model = pickle.load(file)
 
-            with open(r"E:\GUVI\ML_project\Copper\cscaler.pkl", 'rb') as f:
+            with open(r"https://github.com/MOHAMMEDUMARFAAZITH/Industrial-Copper-Model/blob/main/cscaler.pkl", 'rb') as f:
                 cscaler_loaded = pickle.load(f)
 
-            with open(r"E:\GUVI\ML_project\Copper\ct.pkl", 'rb') as f:
+            with open(r"https://github.com/MOHAMMEDUMARFAAZITH/Industrial-Copper-Model/blob/main/ct.pkl", 'rb') as f:
                 ct_loaded = pickle.load(f)
 
             
