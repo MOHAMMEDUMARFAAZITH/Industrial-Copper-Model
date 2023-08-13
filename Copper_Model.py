@@ -75,7 +75,7 @@ with tab1:
         if submit_button and flag==0:
             
             import pickle
-            with open(r"https://github.com/MOHAMMEDUMARFAAZITH/Industrial-Copper-Model/blob/main/rmodel.pkl", 'rb') as file:
+            with open(r"rmodel.pkl", 'rb') as file:
                 loaded_model = pickle.load(file)
             with open(r"https://github.com/MOHAMMEDUMARFAAZITH/Industrial-Copper-Model/blob/main/rscaler.pkl", 'rb') as f:
                 scaler_loaded = pickle.load(f)
