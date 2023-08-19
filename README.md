@@ -15,7 +15,7 @@ EDA: Chech the releationship between feature and target and skewness.
 
 Remove outliers.
 
-Chech the correlation
+Check the correlation
 
 Model and Data: The predictive models (selling price and status) are trained machine learning models.
 
