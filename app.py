@@ -75,35 +75,3 @@ if selected=="PREDICT SELLING PRICE":
         new_sample1 = scaler_loaded.transform(new_sample)
         new_pred = loaded_model.predict(new_sample1)[0]
         st.write('## :red[Predicted selling price:] ', (new_pred))
-
-    #with st.sidebar:
-        #st.write('W':'0',WI1,S2,Others3,PL4,IPL5,SLAWR6)
-
-
-
-#status
-elif selected=="PREDICT STATUS":
-    col1,col2,col3=st.columns([5,2,5])
-    with col1:
-        st.write(' ')
-        quantity_tons = st.number_input(("Enter quality tons(Min:611728 & Max:1722207579)"),key=10)
-        customer = st.number_input("Enter customer ID (Min:12458, Max:30408185)",key=11)
-        item_type = st.selectbox("Select item Type(W:0,WI:1,S:2,Others:3,PL:4,IPL:5,SLAWR:6)", item_type_options,key=12)
-        application = st.selectbox(" Select Application",sorted(application_options),key=13)
-        price=st.number_input("Enter Selling Price")
-    with col3:
-        thickness = st.number_input(("Enter thickness (Min:0.18 & Max:400)"),key=15)
-        width = st.number_input("Enter width (Min:1, Max:2990)",key=16)
-        country = st.selectbox("Country", sorted(country_options),key=17)
-        product_ref = st.selectbox("Product Reference", product,key=18)
-
-    c=st.columns([3])
-    status=st.button("PREDICT STATUS")
-    if status:
-        new_sample = np.array([[(float(quantity_tons)),(float(customer)), country,float(item_type),float(application),(float(thickness)),float(width),int(product_ref),int(price)]])
-        predict=cloaded_model.predict(new_sample)[0]
-        #st.write(predict)
-        if predict==1:
-            st.write('## :red[STATUS IS WON]')
-        else:
-            st.write('## :red[STATUS IS LOST]')  
