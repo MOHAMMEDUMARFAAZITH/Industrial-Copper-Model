@@ -2,7 +2,7 @@
 
 This web application allows you to predict the selling price and status for industrial copper based on the given input parameters. The application uses machine learning models trained on the data to provide accurate predictions.
 
-https://lnkd.in/gRbejC7k
+https://industrial-copper-modeling-rmx43zdkqgungnd8aoh4sf.streamlit.app/
 
 
 ## Skills
